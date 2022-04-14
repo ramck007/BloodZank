@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="SignUpPage.css">
+	<title>Sign-Up</title>
+	
+</head>
+<body>
+       <div class="container">
+        <form action="signup" method="post">
+            <table align="center">
+                <tr><td align="right"><strong>Name : </strong> </td><td><input type="text" name="uname" required="required"></td></tr>
+                 <tr><td align="right"><strong>Aadhar Id: </strong></td><td><input type="text" pattern="[0-9]{12}" maxlength="12" minlength="11" name="aaid" required="required"></td></tr>
+                <tr><td align="right"><strong>Email Id : </strong> </td><td><input type="text" name="uid" required="required"></td></tr>
+                <tr><td align="right"><strong>Pin : </strong></td><td><input type="password" pattern="[0-9]{6}" maxlength="6" minlength="4"name="upin" required="required"></td></tr>
+             <!--   <tr><td align="right"><strong>Blood Group : </strong></td><td><input type="text" name="bgname" required="required"></td></tr>-->
+             <tr><td align="right"><strong>Blood Group : </strong></td><td>
+                 <label for="Blood Group" placeholder="blood group"  ></label>
+
+<select name="bloodgroup" id="Blood Group" >
+    <option value="0">Select</option>
+  <option value="A+">A+</option>
+  <option value="B+">B+_</option>
+  <option value="O+">O+</option>
+  <option value="AB+">AB+</option>
+    <option value="O-">O-</option>
+      <option value="A-">A-</option>
+        <option value="AB-">AB-</option>
+          <option value="B-">B-</option>
+    </select>
+</td></tr>
+<tr><td align="right"><strong>Gender : </strong></td><td>
+                 <label for="gender" placeholder="gender"  ></label>
+
+<select name="gender" id="gender">
+    <option value="0">Select</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="others">Others</option>
+  </select>
+  </td></tr>
+                <tr><td align="right"><strong>Contact Number : </strong> </td><td><input type="text" minlength="10" maxlength="10" name="number" required="required"></td></tr>
+                <tr><td align="right"><strong>Location : </strong></td><td>
+                	<!--<input type="text" name="location" required="required">-->
+                	<label for="location" placeholder="district"  ></label>
+             
+<select name="district" id="location">
+    <option value="0">Select</option>
+  <option value="tirunelveli">Tirunelveli</option>
+  <option value="tenkasi">Tenkasi</option>
+  <option value="tuticorin">Tuticorin</option>
+  <option value="madurai">Madurai</option>
+	</select>
+      </td></tr>
+               <tr><td align="right"><strong>Address: </strong></td><td><input type="address" name="address" required="required"></td></tr>
+               <tr><td align="right"><strong>Last Donated Date : </strong> </td><td><input type="date" name="udate" required="required"></td></tr>
+                <tr><td align="right"><strong>Are you Willing to Donate : </strong></td><td><input type="radio" id="Yes" name="donate" value="Yes" required="required"><label for="Yes"><strong>Yes</strong></label></td></tr>
+                <tr><td align="right"></td><td><input type="radio" id="No" name="donate" value="No"><label for="No"><strong>No</strong></label></td></tr>
+                <!--<tr><td></td><td><input type="submit" value="signup"></td></tr>-->
+            </table>
+            <button onclick="SignUp()">Create</button>
+        </form>
+    </div>
+</body>
+</html>

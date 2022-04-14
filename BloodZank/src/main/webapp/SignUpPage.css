@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+*{
+	
+	padding: 0px;
+	box-sizing:border-box ;
+}
+body{
+	background-image: url("create.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+    bottom: 50px;
+	margin: 50px;
+	margin-left: 130px;
+	border-radius: 10px;
+	align-content: center;
+	align-items: center;
+	overflow: hidden;
+	justify-content: center;
+	text-align: center;
+    display: flex;
+}
+address{
+	width: 500px;
+}
+tr.location{
+	width: 200px;
+}
+table{
+	border-spacing: 10px;
+}
+input[type="radio"]{
+    vertical-align:top;
+    }
+p{
+    font-size:10px;line-height: 18px;
+}
+
+button {
+	width: 300px;
+	margin: 30px;
+	height: 50px;
+	color: green;
+	background-color: wheat;
+}
+select{
+	width: 165px;
+}
+.date{
+	width: 165px;
+}

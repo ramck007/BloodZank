@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="BloodZank.css">
+    <title>Login</title>
+
+</head>
+<body>
+    <div class="container">
+    <div id="logindiv">
+        <form action="login" method="post">
+            <h2>Never feel weak, you have the ability to save a life. Just donate blood</h2>
+            <h3>Blood donation will cost you nothing, but it will save a life!</h3>
+            <h4>Thanks ! for Donating Blood!</h4>
+             <a href="#default" class="logo"><img class="logo" src="Logo1.png"></a>
+             
+            <table align="center">
+                <tr><td align="right"><strong>User Id : </strong> </td><td><input type="text" name="uid"  required="required" ></td></tr>
+                <tr><td align="right"><strong>Pin : </strong></td><td><input type="password" pattern="[0-9]{6}" maxlength="6" minlength="4"name="upin" required="required"></td></tr>
+                <!--<tr><td></td><td><input type="submit" value="Login"></td></tr>-->
+            </table>
+        
+            <button onclick="loginnn()">Login</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button onclick="createaccc()">Create Account</button>
+    </div>
+    <br>
+    <br>
+    <div id="signupdiv" style="display: none;">
+        <form action="">
+            <table align="center">
+                <tr><td align="right"><strong>Name : </strong> </td><td><input type="text" name="uname" required="required"></td></tr>
+                <tr><td align="right"><strong>Email Id : </strong> </td><td><input type="text" name="uid" required="required"></td></tr>
+                <tr><td align="right"><strong>Password : </strong></td><td><input type="password" name="upass" required="required"></td></tr>
+                <tr><td align="right"><strong>Blood Group : </strong></td><td><input type="text" name="bgname" required="required"></td></tr>
+                <tr><td align="right"><strong>Contact Number : </strong> </td><td><input type="text" name="number" required="required"></td></tr>
+                <tr><td align="right"><strong>Location : </strong></td><td><input type="text" name="location" required="required"></td></tr>
+                <tr><td align="right"><strong>Willing to Donate : </strong></td><td><input type="radio" id="Yes" name="donate" value="Yes" required="required"><label for="Yes"><strong>Yes</strong></label></td></tr>
+                <tr><td align="right"></td><td><input type="radio" id="No" name="donate" value="No"><label for="No"><strong>No</strong></label></td></tr>
+                <!--<tr><td></td><td><input type="submit" value="signup"></td></tr>-->
+            </table>
+            <button onclick="SignUp()">Create</button>
+        </form>
+    </div>
+
+    <script>
+        function createaccc(){
+            window.location.assign("SignUpPage.html");
+        }
+
+      /*  function createaccc(){
+            var x= document.getElementById("signupdiv");
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }*/
+        
+    </script>
+ </div>
+</body>
+</html>
